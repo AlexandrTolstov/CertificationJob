@@ -9,3 +9,10 @@ for (int i = 0; i < Strings.Length; i++)
     Console.Write($"Str{i+1} = ");
     Strings[i] = Console.ReadLine();
 }
+
+int NumOfMin = 0;
+for (int i = 0; i < Strings.Length; i++)
+{
+    if (Strings[i].Length <= 3)
+        NumOfMin++;
+}
